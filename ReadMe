@@ -1,0 +1,14 @@
+CDIRestService
+-----------------------------
+1.From the command Line move to CDIRestService directory and build the Project.
+2.Build Command: mvn clean install idea:clean idea:idea -Dwtpversion=2.0
+3.Deploy and Run the application Using tomee-maven-plugin with command mvn tomee:run
+4.Check the REST API with REST Client
+Example1:http://localhost:8080/CDIRestService/app/change/optimal?pence=576
+Example2:http://localhost:8080/CDIRestService/app/change/supply?pence=576
+5.tomee-maven-plugin runs with javaee-api6 and therefore to use javaee-api7
+place the CDIRestService.war file from the target folder to webapps of the manually downloaded
+any of the (apache-tomee-plus-7.0.3 , apache-tomee-webprofile-7.1.0 ...)
+6.The same way for using javaee-api8 place the war file from the target folder to webapps of manually downloaded
+any of the (apache-tomee-webprofile-8.0.0-M2 , apache-tomee-plus-8.0.0-M2...)
+7.Source Java8 & JavaEE8
